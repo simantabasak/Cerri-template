@@ -1,0 +1,359 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+#click:checked + .color-picker-main{
+transform: translateX(5px);
+}
+.color-picker-main{
+    z-index: 2;
+    width: 200px;
+    height: 200px;
+    left: 0px;
+    top: 50%;
+    position: fixed;
+    transition: .4s;
+    transform: translateX(-200px);
+}
+.icon{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 100%;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: white;
+    background: black;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 0 30px 30px 0;    
+}
+.icon i{
+    animation-name: chaka;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: linear;    
+    cursor: pointer;
+}
+@keyframes chaka {
+    100% {transform: rotate(360deg);}
+  }
+.color-picker-inner ul a{
+    margin: 2px;
+    border-radius: 25px 25px 0 25px;
+}
+.color-picker-main .color-picker-inner ul{
+    justify-content: center;
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+}
+.color-picker-main .color-picker-inner{
+    background-color: #fff;
+    position: relative;
+    padding: 1 0px;
+    
+}
+.header-menu{
+    background-image: url(./img/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.68);
+    background-blend-mode: overlay;
+    height: 630px;
+    position: relative;
+}
+.menu-top{
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    right: 200px;
+}
+.menu-top .menu .nav-item .nav-link{
+    color: white;
+    font-size: 15x;
+}
+.menu-top .menu .nav-item .nav-link.active{
+    color: tomato;
+}
+.menu-top .menu .nav-item .nav-link:hover{
+    color: tomato;
+}
+.menu .nav-item{
+    padding: 0 7px;
+}
+.header-menu .write h4{
+    margin-top: 140px;
+    font-size: 30px;
+}
+.header-menu .write .animated{
+    font-weight: 700;
+    font-size: 60px;
+    margin: 10px 0;
+}
+.header-menu .write P{
+    padding: 25PX 400PX;
+}
+.header-menu .write .text-white{
+position: relative;
+animation: bounce 2s infinite;
+height: 44px;
+width: 28px;
+line-height: 54px;
+border-radius: 30px;
+border: 2px solid #ffffff;
+display: inline-block;
+color: #fff;
+font-size: 10px;
+margin-top: 120px;
+}
+.header-menu .write .text-white::after{
+content: "";
+position: absolute;
+top: 22px;
+left: 11px;
+border-radius: 2px;
+bottom: 0px;
+transition: all .2s;
+height: 10px;
+width: 3px;
+background-color: #fff;
+}
+/* =========about============ */
+img{
+    max-width: 100%;
+}
+.about h2{
+    font-weight: bold;
+}
+.about span{
+    font-weight: lighter;
+}
+.about p{
+    color: #606060;
+    font-size: 20px;
+}
+.about ul li{
+    display: inline-block;
+    margin-right:8px;
+    text-align: center;
+    line-height: 37px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #606060;
+    transition: .4s;
+}
+.about ul li a{
+    color: black;
+    font-size: 20px;
+    transition: .4s;
+}
+.about ul li:hover a{
+    color: tomato;
+}
+.about ul li:hover{    
+    border: 2px solid tomato;
+}
+.write p{
+    padding: 10px 500px;
+}
+.write span{
+    font-weight: bold;
+}
+.service .card{
+    margin-top: 25px;
+    background-color: #f8f9fa;
+}
+.service .card i{
+    color: tomato;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+.service .card h5{
+    font-weight: bold;
+}
+.service .card p{
+    color: #606060;
+    padding: 0 59px;
+}
+.service .card span{
+    display: table;
+    height: 3px;
+    width: 50px;
+    margin: 15px auto;
+    transition: .5s;
+    background-color: tomato;
+}
+.service .card:hover span{
+    width: 80px;
+}
+
+/* ========carosel======== */
+.couresel .carousel-inner .captio i{
+    display: block;
+    font-size: 50px;
+    color: rgb(214, 36, 36);
+    padding-bottom: 25px;
+}
+.couresel .carousel-inner .captio img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.couresel .carousel-inner .captio h5{
+    color: #606060;
+    font-size: 20px;
+    margin: 40px 0;
+}
+.couresel .carousel-inner .captio h5 span{
+    color: black;
+    font-weight: bold;
+}
+.couresel .carousel-inner .captio p{
+    padding: 0px 230px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #606060;
+}
+.couresel .bb{
+    height: 5px;
+    width: 10px;
+    border-radius: 25%;
+    border: none;
+    margin: 0px 5px;
+    background-color: rgb(245, 187, 177);
+}
+.couresel .carousel-indicators .active{
+    background-color: tomato;
+    width: 20px;
+}
+/* ========work========= */
+.work img{
+    height: 200px;
+    width: 250px;
+}
+.work .work-menu{
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.work .work-menu strong{
+    color: black;
+    padding: 10px;
+    transition: .3s ;
+}
+.work .work-menu strong:hover{
+    color: white;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 30px ;
+}
+.tab-content .work-content img{
+    height: auto;
+    width: 380px;
+}
+.tab-content .work-content .image .tag h5{
+    color: rgb(202, 198, 198);
+    text-align: center;
+}
+.tab-content .work-content .image .tag{
+    position: absolute;
+    bottom: -30%;
+    left: 30%; 
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+.tab-content .work-content .image:hover .tag{
+    visibility: visible;
+    opacity: 1;
+    bottom: 30%;
+}
+.tab-content .work-content .image{
+    height: auto;
+    width: 380px;
+    margin-top: 40px;
+    position: relative;
+}
+.tab-content .work-content .image:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.563);
+    background-blend-mode: overlay;
+    transition: .4s;
+    visibility: hidden;
+    opacity: 0;
+}
+.tab-content .work-content .image:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+/* ======blog========== */
+.blog .card p{
+    color: gray;
+    font-size: 19px;
+}
+.blog .card h5{
+    padding: 10px 0;
+}
+.blog .card h5 a{
+    font-size: 20px;
+    font-weight: 500;
+}
+.blog .card a{
+    text-decoration: none;
+    color: rgb(163, 161, 161);
+    font-size: 15px;
+    font-weight: 600;
+}
+/* ===contact====== */
+.contact i{
+    font-size: 40px;
+    color: tomato;
+    padding-bottom: 20px;
+}
+.contact p{
+    color: gray;
+    font-size: 20px;
+}
+.ne{
+    display: inline-block;
+    width: 632px;
+    height: 50px;
+    margin-bottom: 25px;
+}
+.ns{
+    height: 50px;
+}
+.form-control:focus{
+    border: 2px solid red;
+    box-shadow: 0 0 0 0;
+}
+.footer{
+    background-color: black;
+    text-align: center;
+    color: gray;
+    padding: 80px 0;
+}
+.footer ul li{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    margin: 5px;
+    background-color: rgba(128, 128, 128, 0.377);
+}
+.footer ul li a{
+    color: gray;
+    text-decoration: none;
+}
